@@ -1204,407 +1204,60 @@
     }
 }
 
-//雨滴滴落動畫
-@keyframes drop1 {
+//入場動畫環繞動
+@keyframes around2 {
     0% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(0deg) rotate(-90deg);
+    }
+
+    100% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(360deg) rotate(-90deg);
+    }
+}
+
+//入場動畫碎片繞動
+@keyframes innerRound {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+//入場前置動畫
+@keyframes ballJump {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.3);
+    }
+
+    100% {
         opacity: 1;
-        top: -100%;
-    }
-
-    6% {
-        opacity: 0;
-        top: 100%;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes drop2 {
-    0% {
-        opacity: 1;
-        top: -100%;
-    }
-
-    10% {
-        opacity: 1;
-        top: -100%;
-    }
-
-    16% {
-        opacity: 0;
-        top: 100%;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes drop3 {
-    0% {
-        opacity: 1;
-        top: -100%;
-    }
-
-    26% {
-        opacity: 1;
-        top: -100%;
-    }
-
-    33% {
-        opacity: 0;
-        top: 100%;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-//入場動畫_漣漪放大
-@keyframes wave1 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    3% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    15% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(2);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes wave1_2 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    5% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    20% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(1.5);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes wave2 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    14% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    26% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(2);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes wave2_2 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    16% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    30% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(1.5);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes wave3 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    31% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    45% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(2);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes wave3_2 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    33% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    50% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(1.5);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes wave4 {
-    0% {
-        border: solid 2px #ffffff;
-        transform: scale(0);
-    }
-
-    100% {
-        opacity: 0;
-        border: solid 2px #ffffff;
-        transform: scale(1.5);
-    }
-}
-
-//transCover出場效果
-@keyframes transCover_1 {
-    0% {
-        opacity: 0;
-        transform: translate(-50%,-50%) scale(1.5);
-    }
-
-    1% {
-        opacity: 1;
-        transform: translate(-50%,-50%) scale(1);
-    }
-
-    3% {
-        transform: translate(-50%,-50%) scale(0.5);
-    }
-
-    4% {
-        transform: translate(-50%,-50%) scale(0.3);
-    }
-
-    7% {
-        transform: translate(-50%,-50%) scale(30);
-    }
-
-    100% {
-        transform: translate(-50%,-50%) scale(30);
-    }
-}
-
-//荷葉浮動
-@keyframes floatLeaf_1 {
-    0% {
-        transform: translate(0%,0%) rotate(0deg);
-    }
-
-    30% {
-        transform: translate(-15%,-55%) rotate(40deg);
-    }
-
-    50% {
-        transform: translate(10%,30%) rotate(-15deg);
-    }
-
-    80% {
-        transform: translate(5%,20%) rotate(-5deg);
-    }
-
-    100% {
-        transform: translate(0%,0%) rotate(0deg);
-    }
-}
-
-@keyframes floatLeaf_2 {
-    0% {
-        transform: translate(0%,0%) rotate(-160deg);
-    }
-
-    33% {
-        transform: translate(20%,20%) rotate(-200deg);
-    }
-
-    50% {
-        transform: translate(20%,20%) rotate(-200deg);
-    }
-
-    75% {
-        transform: translate(10%,10%) rotate(-170deg);
-    }
-
-    100% {
-        transform: translate(0%,0%) rotate(-160deg);
-    }
-}
-
-@keyframes floatLeaf_3 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    30% {
-        transform: rotate(30deg);
-    }
-
-    70% {
-        transform: rotate(30deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes floatLeaf_4 {
-    20% {
-        transform: translate(0%,0%) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(-20%,-30%) rotate(30deg);
-    }
-
-    70% {
-        transform: translate(-20%,-30%) rotate(30deg);
-    }
-
-    100% {
-        transform: translate(0%,0%) rotate(0deg);
-    }
-}
-
-@keyframes floatLeaf_5 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-//enterBtn點擊消失
-@keyframes disapperP {
-    0% {
-        opacity: 1;
-        font-size: 24px;
-    }
-
-    10% {
-        opacity: 0;
-        font-size: 12px;
-    }
-
-    100% {
-        opacity: 0;
-        font-size: 12px;
-    }
-}
-
-@keyframes disapperLeaf_1 {
-    0% {
-        left: -60px;
-        bottom: -20px;
         transform: scale(1);
     }
-
-    30% {
+}
+@keyframes starJump {
+    0% {
         opacity: 0;
-        left: 50%;
-        bottom: 50%;
-        transform: scale(0);
     }
-
+    
     100% {
-        opacity: 0;
-        left: 50%;
-        bottom: 50%;
-        transform: scale(0);
+        opacity: 1;
     }
 }
 
-@keyframes disapperLeaf_2 {
+@keyframes stop {
     0% {
-        right: -30px;
-        top: -10px;
-        transform: rotate(-160deg) scale(1);
-    }
-
-    30% {
         opacity: 0;
-        right: 50%;
-        top: 50%;
-        transform: rotate(-160deg) scale(0);
     }
 
     100% {
         opacity: 0;
-        right: 50%;
-        top: 50%;
-        transform: rotate(-160deg) scale(0);
-    }
-}
-
-//enterBtn滑入時荷葉環繞
-@keyframes aroundLeaf_1 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes aroundLeaf_2 {
-    0% {
-        transform: rotate(-160deg);
-    }
-
-    100% {
-        transform: rotate(200deg);
     }
 }

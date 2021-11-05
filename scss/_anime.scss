@@ -1,0 +1,1610 @@
+//黃色水滴跳動動畫
+@keyframes dotJump1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        top: 3px;
+        left: 7px;
+    }
+
+    33% {
+        transform: scale(1.1);
+        opacity: 0.8;
+        top: -4px;
+        left: 0px;
+    }
+
+    67% {
+        transform: scale(0.7);
+        opacity: 0.5;
+        top: -7px;
+        left: -10px;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        top: -2px;
+        left: -18px;
+    }
+}
+@keyframes dotJump2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        bottom: 10px;
+        right: 2px;
+    }
+
+    33% {
+        transform: scale(1.1);
+        opacity: 0.8;
+        bottom: 2px;
+        right: -10px;
+    }
+
+    67% {
+        transform: scale(0.7);
+        opacity: 0.5;
+        bottom: -8px;
+        right: -18px;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+        bottom: -16px;
+        right: -24px;
+    }
+}
+
+//切換按鈕hover彈跳動畫
+@keyframes rightSide_hover {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scaleX(0.9) scaleY(1.2);
+    }
+
+    40% {
+        transform: scaleX(1.2) scaleY(0.9);
+    }
+
+    65% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    90% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+}
+
+//header logo圖淡入淡出效果
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0;
+    }
+
+    76% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: -50%;
+    }
+
+    4% {
+        opacity: 0;
+        top: -50%;
+        transform: rotate(15deg) translateY(-50%);
+    }
+
+    5% {
+        opacity: 1;
+        top: -50%;
+        transform: rotate(15deg) translateY(-50%);
+    }
+
+    7% {
+        opacity: 1;
+        top: 50%;
+        transform: rotate(0deg) translateY(-50%);
+    }
+
+    76% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+//header背景變換效果
+@keyframes backgroundTrans {
+    0% {
+        filter: brightness(1);
+    }
+
+    4% {
+        filter: brightness(3);
+    }
+
+    76% {
+        filter: brightness(3);
+    }
+
+    80% {
+        filter: brightness(1);
+    }
+}
+
+//header主泡泡爆炸動畫
+@keyframes bubBreak {
+    77% {
+        opacity: 0;
+        transform: scale(1);
+        background: radial-gradient(transparent 0%,#ffffff 100%);
+    }
+
+    78% {
+        opacity: 0.5;
+        transform: scale(1.3);
+        background: radial-gradient(transparent 50%,#ffffff 100%);
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(1.5);
+        background: radial-gradient(transparent 100%,#ffffff 100%);
+    }
+}
+
+//header 主泡泡抖動效果
+@keyframes skakeBub {
+
+    5% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    6% {
+        border-radius: 50% 50% 55% 52%;
+        width: 595px;
+        height: 605px;
+    }
+
+    8% {
+        border-radius: 50% 50% 50% 55%;
+        width: 598px;
+        height: 605px;
+    }
+
+    11% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    15% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    16% {
+        border-radius: 50% 50% 51% 55%;
+        width: 595px;
+        height: 605px;
+    }
+
+    17% {
+        border-radius: 50% 50% 51% 50%;
+        width: 595px;
+        height: 605px;
+    }
+
+    20% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    21% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    22% {
+        border-radius: 50% 50% 55% 50%;
+        width: 608px;
+        height: 590px;
+    }
+
+    24% {
+        border-radius: 50% 50% 53% 50%;
+        width: 604px;
+        height: 595px;
+    }
+
+    25% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    26% {
+        border-radius: 50% 50% 50% 51%;
+        width: 605px;
+        height: 605px;
+    }
+
+    28% {
+        border-radius: 50% 50% 51% 50%;
+        width: 600px;
+        height: 603px;
+    }
+
+    29% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+    
+    30% {
+        border-radius: 50% 50% 50% 53%;
+        width: 610px;
+        height: 605px;
+    }
+
+    32% {
+        border-radius: 50% 50% 51% 50%;
+        width: 600px;
+        height: 605px;
+    }
+
+    35% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    36% {
+        border-radius: 50% 50% 55% 52%;
+        width: 605px;
+        height: 608px;
+    }
+
+    38% {
+        border-radius: 50% 50% 50% 53%;
+        width: 600px;
+        height: 604px;
+    }
+
+    41% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+
+    45% {
+        border-radius: 50% 50% 51% 55%;
+        width: 595px;
+        height: 590px;
+    }
+
+    50% {
+        border-radius: 50% 50% 52% 50%;
+        width: 605px;
+        height: 595px;
+    }
+
+    55% {
+        border-radius: 50% 50% 50% 50%;
+        width: 600px;
+        height: 600px;
+    }
+}
+
+//header 主泡泡外小泡泡滑入效果
+@keyframes smallBub1 {
+    2% {
+        opacity: 0;
+        left: 40px;
+        bottom: -105px;
+    }
+
+    4% {
+        opacity: 0.4;
+        left: 100px;
+        bottom: -45px;
+    }
+
+    6% {
+        opacity: 0.4;
+        left: 160px;
+        bottom: 25px;
+    }
+
+    9% {
+        opacity: 0;
+    }
+}
+@keyframes smallBub1_2 {
+    5% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    9% {
+        opacity: 1;
+        left: 30%;
+        bottom: -20px;
+    }
+
+    13% {
+        opacity: 0;
+        left: 30%;
+        bottom: -40px;
+    }
+}
+@keyframes smallBub1_3 {
+    5% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    9% {
+        opacity: 1;
+        left: 70%;
+        bottom: -40px;
+    }
+
+    13% {
+        opacity: 0;
+        left: 70%;
+        bottom: -60px;
+    }
+}
+
+@keyframes smallBub2 {
+    12% {
+        opacity: 0;
+        right: 80px;
+        bottom: -50px;
+    }
+
+    14% {
+        opacity: 0.4;
+        right: 120px;
+        bottom: -10px;
+    }
+
+    16% {
+        opacity: 0.4;
+        right: 160px;
+        bottom: 30px;
+    }
+
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes smallBub2_2 {
+    15% {
+        opacity: 0;
+        top: 0px;
+    }
+
+    18% {
+        opacity: 1;
+        top: -20px;
+    }
+
+    21% {
+        opacity: 0;
+        top: -40px;
+    }
+}
+@keyframes smallBub2_3 {
+    15% {
+        opacity: 0;
+        top: 0px;
+    }
+
+    18% {
+        opacity: 1;
+        top: -40px;
+    }
+
+    21% {
+        opacity: 0;
+        top: -50px;
+    }
+}
+
+@keyframes smallBub3 {
+    18% {
+        opacity: 0;
+        left: 20px;
+    }
+
+    20% {
+        opacity: 0.4;
+        left: 80px;
+    }
+
+    22% {
+        opacity: 0.4;
+        left: 140px;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+@keyframes smallBub3_2 {
+    22% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    23% {
+        opacity: 1;
+        left: 100%;
+        bottom: -10px;
+    }
+
+    24% {
+        opacity: 0;
+        left: 100%;
+        bottom: -20px;
+    }
+}
+
+@keyframes smallBub4 {
+    23% {
+        opacity: 0;
+        right: 170px;
+        bottom: -50px;
+    }
+
+    24% {
+        opacity: 0.4;
+        right: 200px;
+        bottom: -20px;
+    }
+
+    25% {
+        opacity: 0.4;
+        right: 230px;
+        bottom: 10px;
+    }
+
+    27% {
+        opacity: 0;
+    }
+}
+
+@keyframes smallBub5 {
+    27% {
+        opacity: 0;
+        right: 80px;
+        bottom: 0px;
+    }
+
+    28% {
+        opacity: 0.4;
+        right: 110px;
+        bottom: 20px;
+    }
+
+    29% {
+        opacity: 0.4;
+        right: 140px;
+        bottom: 40px;
+    }
+
+    33% {
+        opacity: 0;
+    }
+}
+@keyframes smallBub5_2 {
+    30% {
+        opacity: 0;
+        top: 0px;
+    }
+
+    32% {
+        opacity: 1;
+        left: 100%;
+        top: -10px;
+    }
+
+    34% {
+        opacity: 0;
+        left: 100%;
+        top: -20px;
+    }
+}
+
+@keyframes smallBub6 {
+    32% {
+        opacity: 0;
+        left: 40px;
+        bottom: 0px;
+    }
+
+    34% {
+        opacity: 0.4;
+        left: 90px;
+        bottom: 20px;
+    }
+
+    36% {
+        opacity: 0.4;
+        left: 140px;
+        bottom: 40px;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+@keyframes smallBub6_2 {
+    35% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    37% {
+        opacity: 1;
+        bottom: -30px;
+    }
+
+    39% {
+        opacity: 0;
+        bottom: -60px;
+    }
+}
+@keyframes smallBub6_3 {
+    35% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    37% {
+        opacity: 1;
+        left: 90%;
+        bottom: -20px;
+    }
+
+    39% {
+        opacity: 0;
+        left: 90%;
+        bottom: -40px;
+    }
+}
+
+//小泡泡閃動動畫
+@keyframes small_shakeBub1 {
+    29% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    30% {
+        transform: scaleX(1.2) scaleY(0.9);
+    }
+
+    31% {
+        transform: scaleX(0.9) scaleY(1.2);
+    }
+
+    33% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    34% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    35% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes small_shakeBub2 {
+    18% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    20% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    22% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    23% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+@keyframes small_shakeBub2_2 {
+    21% {
+        opacity: 0;
+        transform: scale(1);
+        top: 120px;
+        left: 60px;
+    }
+
+    23% {
+        opacity: 1;
+        transform: scale(1.2);
+        top: 100px;
+        left: 30px;
+    }
+
+    25% {
+        opacity: 0.5;
+        transform: scale(0.6);
+        top: 140px;
+        left: 0px;
+    }
+
+    26% {
+        opacity: 0;
+        transform: scale(0);
+        top: 170px;
+        left: -30px;
+    }
+}
+
+@keyframes small_shakeBub3 {
+    33% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    35% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    37% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    38% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes small_shakeBub4 {
+    19% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    20% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    21% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    22% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+//漂浮泡泡
+@keyframes floatBub1 {
+    0% {
+        bottom: -730px;
+        left: 455px;
+    }
+
+    19% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scaleX(0.9) scaleY(1.2);
+        bottom: -530px;
+        left: 455px;
+    }
+
+    21% {
+        transform: scaleX(1.2) scaleY(0.9);
+        bottom: -520px;
+        left: 455px;
+    }
+
+    22% {
+        transform: scaleX(0.9) scaleY(1.1);
+        bottom: -510px;
+        left: 455px;
+    }
+
+    23% {
+        transform: scaleX(1.1) scaleY(0.9);
+        bottom: -500px;
+        left: 455px;
+    }
+
+    24% {
+        transform: scaleX(1) scaleY(1);
+        bottom: -490px;
+        left: 455px;
+    }
+
+    44% {
+        bottom: -290px;
+        left: 455px;
+        background: radial-gradient(transparent 0%, #ffffff 100%);
+    }
+
+    45% {
+        opacity: 0.4;
+        bottom: -280px;
+        left: 455px;
+        background: radial-gradient(transparent 100%, #ffffff 0%);
+    }
+
+    47% {
+        opacity: 0;
+        bottom: -280px;
+        left: 455px;
+        transform: scaleX(1);
+    }
+    
+    48% {
+        opacity: 0;
+        bottom: 0px;
+        left: 920px;
+        transform: rotate(30deg) scaleX(0.5);
+    }
+
+    77% {
+        opacity: 0;
+        bottom: 0px;
+        left: 920px;
+        transform: rotate(30deg) scaleX(0.5);
+    }
+
+    80% {
+        opacity: 0.8;
+        bottom: -930px;
+        left: 455px;
+        transform: rotate(0deg) scaleX(1);
+    }
+
+    100% {
+        opacity: 0.4;
+        bottom: -730px;
+        left: 455px;
+    }
+}
+@keyframes floatBub1_2 {
+    44% {
+        opacity: 0;
+        transform: scale(1);
+        background: radial-gradient(transparent 0%,#ffffff 100%);
+    }
+
+    45% {
+        opacity: 0.5;
+        transform: scale(1.3);
+        background: radial-gradient(transparent 50%,#ffffff 100%);
+    }
+
+    47% {
+        opacity: 0;
+        transform: scale(1.5);
+        background: radial-gradient(transparent 100%,#ffffff 100%);
+    }
+}
+
+@keyframes floatBub2 {
+    0% {
+        bottom: -800px;
+        right: 460px;
+    }
+
+    25% {
+        transform: scaleX(0.9) scaleY(1.2);
+        bottom: -700px;
+        right: 460px;
+    }
+
+    27% {
+        transform: scaleX(1.2) scaleY(0.9);
+    }
+
+    28% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    29% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    31% {
+        transform: scaleX(1) scaleY(1);
+        bottom: -676px;
+        right: 460px;
+    }
+
+    60% {
+        bottom: -560px;
+        right: 460px;
+        background: radial-gradient(transparent 0%, #ffffff 100%);
+    }
+
+    61% {
+        opacity: 0.4;
+        bottom: -554px;
+        right: 460px;
+        background: radial-gradient(transparent 100%, #ffffff 0%);
+    }
+
+    63% {
+        opacity: 0;
+        bottom: -554px;
+        right: 460px;
+        transform: scaleX(1);
+    }
+    
+    64% {
+        opacity: 0;
+        bottom: 0px;
+        right: 810px;
+        transform: rotate(-25deg) scaleX(0.5);
+    }
+
+    77% {
+        opacity: 0;
+        bottom: 0px;
+        right: 810px;
+        transform: rotate(-25deg) scaleX(0.5);
+        background: radial-gradient(transparent 0%, #ffffff 100%);
+    }
+
+    80% {
+        opacity: 0.8;
+        bottom: -880px;
+        right: 460px;
+        transform: rotate(-25deg) scaleX(0.5);
+    }
+
+    81% {
+        transform: rotate(0deg) scale(1.1) scaleY(0.9);
+    }
+
+    82% {
+        transform: scale(1);
+    }
+
+    94% {
+        transform: scale(1);
+    }
+
+    95% {
+        transform: scaleX(0.9) scaleY(1.1);
+        bottom: -836px;
+        right: 460px;
+    }
+
+    96% {
+        transform: scaleX(1.1) scaleY(0.9);
+        bottom: -832px;
+        right: 460px;
+    }
+
+    98% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.4;
+        bottom: -800px;
+        right: 460px;
+    }
+}
+@keyframes floatBub2_2 {
+    60% {
+        opacity: 0;
+        transform: scale(1);
+        background: radial-gradient(transparent 0%,#ffffff 100%);
+    }
+
+    61% {
+        opacity: 0.5;
+        transform: scale(1.3);
+        background: radial-gradient(transparent 50%,#ffffff 100%);
+    }
+
+    63% {
+        opacity: 0;
+        transform: scale(1.5);
+        background: radial-gradient(transparent 100%,#ffffff 100%);
+    }
+}
+
+@keyframes floatBub3 {
+    0% {
+        bottom: -700px;
+        right: 180px;
+    }
+
+    9% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    10% {
+        transform: scaleX(0.9) scaleY(1.1);
+        bottom: -650px;
+        right: 180px;
+    }
+
+    13% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    14% {
+       transform: scaleX(0.9) scaleY(1.1);
+    }
+
+    15% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+
+    16% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    29% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    30% {
+        transform: scaleX(0.9) scaleY(1.1);
+        background: radial-gradient(transparent 0%, #ffffff 100%);
+    }
+
+    31% {
+        transform: scaleX(1.1) scaleY(0.9);
+        background: radial-gradient(transparent 100%, #ffffff 0%);
+    }
+
+    50% {
+        opacity: 0.4;
+        bottom: -450px;
+        right: 180px;
+    }
+
+    51% {
+        opacity: 0;
+        transform: scaleX(1) scaleY(1);
+        bottom: -200px;
+        right: 180px;
+    }
+
+    52% {
+        opacity: 0;
+        bottom: -100px;
+        right: 740px;
+        transform: rotate(-45deg) scaleX(0.2) scaleY(0.4);
+    }
+
+
+    78% {
+        opacity: 0;
+        bottom: -100px;
+        right: 740px;
+        transform: rotate(-45deg) scaleX(0.2) scaleY(0.4);
+    }
+
+    80% {
+        opacity: 0.8;
+        bottom: -800px;
+        right: 180px;
+        transform: rotate(0) scaleX(1.1) scaleY(0.9);
+    }
+
+    81% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.4;
+        bottom: -700px;
+        right: 180px;
+    }
+}
+@keyframes floatBub3_2 {
+    30% {
+        opacity: 0;
+        transform: scale(1);
+        background: radial-gradient(transparent 0%,#ffffff 100%);
+    }
+
+    31% {
+        opacity: 0.5;
+        transform: scale(1.3);
+        background: radial-gradient(transparent 50%,#ffffff 100%);
+    }
+
+    33% {
+        opacity: 0;
+        transform: scale(1.5);
+        background: radial-gradient(transparent 100%,#ffffff 100%);
+    }
+}
+
+//主物件hover時i抖動效果
+@keyframes shakeI {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+//背景雜泡
+@keyframes background_floatBub1 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        bottom: 110px;
+    }
+
+    20% {
+        opacity: 0.6;
+        transform: scale(1) translateX(50%);
+        bottom: 210px;
+    }
+
+    30% {
+        opacity: 0.6;
+        transform: scale(1) translateX(-50%);
+    }
+
+    60% {
+        opacity: 0.3;
+        transform: scale(0.5) translateX(50%);
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale(0) translateX(-50%);
+        bottom: 435px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes background_floatBub2 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        bottom: 0px;
+    }
+
+    20% {
+        opacity: 0.6;
+        transform: scale(1) translateX(50%);
+        bottom: 200px;
+    }
+
+    30% {
+        opacity: 0.6;
+        transform: scale(1) translateX(-50%);
+    }
+
+    60% {
+        opacity: 0.3;
+        transform: scale(0.5) translateX(0%);
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale(0) translateX(50%);
+        bottom: 700px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes background_floatBub3 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        bottom: 30px;
+    }
+
+    40% {
+        opacity: 0.5;
+        transform: scale(1);
+        bottom: 130px;
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(0);
+        bottom: 230px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes background_floatBub4 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        bottom: 0px;
+    }
+
+    40% {
+        opacity: 0.5;
+        transform: scale(1);
+        bottom: 400px;
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(0.4);
+        bottom: 800px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+//雨滴滴落動畫
+@keyframes drop1 {
+    0% {
+        opacity: 1;
+        top: -100%;
+    }
+
+    6% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes drop2 {
+    0% {
+        opacity: 1;
+        top: -100%;
+    }
+
+    10% {
+        opacity: 1;
+        top: -100%;
+    }
+
+    16% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes drop3 {
+    0% {
+        opacity: 1;
+        top: -100%;
+    }
+
+    26% {
+        opacity: 1;
+        top: -100%;
+    }
+
+    33% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+//入場動畫_漣漪放大
+@keyframes wave1 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    3% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    15% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes wave1_2 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    5% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    20% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    14% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    26% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes wave2_2 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    16% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    30% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wave3 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    31% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    45% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes wave3_2 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    33% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wave4 {
+    0% {
+        border: solid 2px #ffffff;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        border: solid 2px #ffffff;
+        transform: scale(1.5);
+    }
+}
+
+//transCover出場效果
+@keyframes transCover_1 {
+    0% {
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(1.5);
+    }
+
+    1% {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    3% {
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+
+    4% {
+        transform: translate(-50%,-50%) scale(0.3);
+    }
+
+    7% {
+        transform: translate(-50%,-50%) scale(30);
+    }
+
+    100% {
+        transform: translate(-50%,-50%) scale(30);
+    }
+}
+
+//荷葉浮動
+@keyframes floatLeaf_1 {
+    0% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-15%,-55%) rotate(40deg);
+    }
+
+    50% {
+        transform: translate(10%,30%) rotate(-15deg);
+    }
+
+    80% {
+        transform: translate(5%,20%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+@keyframes floatLeaf_2 {
+    0% {
+        transform: translate(0%,0%) rotate(-160deg);
+    }
+
+    33% {
+        transform: translate(20%,20%) rotate(-200deg);
+    }
+
+    50% {
+        transform: translate(20%,20%) rotate(-200deg);
+    }
+
+    75% {
+        transform: translate(10%,10%) rotate(-170deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(-160deg);
+    }
+}
+
+@keyframes floatLeaf_3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(30deg);
+    }
+
+    70% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floatLeaf_4 {
+    20% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(-20%,-30%) rotate(30deg);
+    }
+
+    70% {
+        transform: translate(-20%,-30%) rotate(30deg);
+    }
+
+    100% {
+        transform: translate(0%,0%) rotate(0deg);
+    }
+}
+
+@keyframes floatLeaf_5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+//enterBtn點擊消失
+@keyframes disapperP {
+    0% {
+        opacity: 1;
+        font-size: 24px;
+    }
+
+    10% {
+        opacity: 0;
+        font-size: 12px;
+    }
+
+    100% {
+        opacity: 0;
+        font-size: 12px;
+    }
+}
+
+@keyframes disapperLeaf_1 {
+    0% {
+        left: -60px;
+        bottom: -20px;
+        transform: scale(1);
+    }
+
+    30% {
+        opacity: 0;
+        left: 50%;
+        bottom: 50%;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        left: 50%;
+        bottom: 50%;
+        transform: scale(0);
+    }
+}
+
+@keyframes disapperLeaf_2 {
+    0% {
+        right: -30px;
+        top: -10px;
+        transform: rotate(-160deg) scale(1);
+    }
+
+    30% {
+        opacity: 0;
+        right: 50%;
+        top: 50%;
+        transform: rotate(-160deg) scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        right: 50%;
+        top: 50%;
+        transform: rotate(-160deg) scale(0);
+    }
+}
+
+//enterBtn滑入時荷葉環繞
+@keyframes aroundLeaf_1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aroundLeaf_2 {
+    0% {
+        transform: rotate(-160deg);
+    }
+
+    100% {
+        transform: rotate(200deg);
+    }
+}

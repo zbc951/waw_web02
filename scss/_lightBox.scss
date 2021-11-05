@@ -1,0 +1,56 @@
+.fancybox-toolbar {
+    right: 15% !important;
+
+    button {
+        background: none !important;
+        padding: 0px !important;
+    }
+}
+
+.fancybox-navigation {
+
+    div {
+        padding: 0px !important;
+    }
+
+    button {
+        padding: 0px !important;
+        background: none !important;
+    }
+}
+
+.fancybox-button--play {
+    display: none !important;
+}
+
+.fancybox-button--zoom {
+
+    &:hover,&:active,&.active {
+        
+        &::before,&::after {
+            background: #ffffff;
+        }
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 19px;
+        width: 2px;
+        height: 10px;
+        background: #ccc;
+        transition: 0.2s all;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 15px;
+        width: 10px;
+        height: 2px;
+        background: #ccc;
+        transition: 0.2s all;
+    }
+}

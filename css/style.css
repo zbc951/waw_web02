@@ -1022,6 +1022,8 @@ html body .mainAnime #canvas {
   pointer-events: none;
   -webkit-animation: stop 1.5s linear 0s, ballJump 1s ease-out 1.5s;
           animation: stop 1.5s linear 0s, ballJump 1s ease-out 1.5s;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 html body .mainAnime .flyDebris {
   width: 1850px;
@@ -1071,20 +1073,6 @@ html body .mainAnime button {
   z-index: 5;
   margin-top: 15%;
   padding: 20px;
-}
-html body .mainAnime .transBoard {
-  position: absolute;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  z-index: 100;
-  pointer-events: none;
-  -webkit-transform: scale(20);
-          transform: scale(20);
-}
-html body .mainAnime .transBoard.display {
-  -webkit-animation: trans 3s ease-out 0s;
-          animation: trans 3s ease-out 0s;
 }
 
 particle {
@@ -3579,12 +3567,12 @@ particle {
             box-shadow: 0px 0px 0px 0vw #ffffff inset;
   }
   50% {
-    -webkit-box-shadow: 0px 0px 10px 10vw #ffffff inset;
-            box-shadow: 0px 0px 10px 10vw #ffffff inset;
+    -webkit-box-shadow: 0px 0px 0px 10vw #ffffff inset;
+            box-shadow: 0px 0px 0px 10vw #ffffff inset;
   }
   100% {
-    -webkit-box-shadow: 0px 0px 10px 10vw #ffffff inset;
-            box-shadow: 0px 0px 10px 10vw #ffffff inset;
+    -webkit-box-shadow: 0px 0px 0px 10vw #ffffff inset;
+            box-shadow: 0px 0px 0px 10vw #ffffff inset;
   }
 }
 @keyframes trans {
@@ -3593,11 +3581,11 @@ particle {
             box-shadow: 0px 0px 0px 0vw #ffffff inset;
   }
   50% {
-    -webkit-box-shadow: 0px 0px 10px 10vw #ffffff inset;
-            box-shadow: 0px 0px 10px 10vw #ffffff inset;
+    -webkit-box-shadow: 0px 0px 0px 10vw #ffffff inset;
+            box-shadow: 0px 0px 0px 10vw #ffffff inset;
   }
   100% {
-    -webkit-box-shadow: 0px 0px 10px 10vw #ffffff inset;
-            box-shadow: 0px 0px 10px 10vw #ffffff inset;
+    -webkit-box-shadow: 0px 0px 0px 10vw #ffffff inset;
+            box-shadow: 0px 0px 0px 10vw #ffffff inset;
   }
 }

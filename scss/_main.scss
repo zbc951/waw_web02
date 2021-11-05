@@ -993,6 +993,7 @@ html {
                 z-index: 2;
                 pointer-events: none;
                 animation: stop 1.5s linear 0s,ballJump 1s ease-out 1.5s;
+                transition: 0.3s all;
             }
 
             .flyDebris {
@@ -1041,20 +1042,6 @@ html {
                 z-index: 5;
                 margin-top: 15%;
                 padding: 20px;
-            }
-
-            .transBoard {
-                position: absolute;
-                border-radius: 50%;
-                width: 150px;
-                height: 150px;
-                z-index: 100;
-                pointer-events: none;
-                transform: scale(20);
-
-                &.display {
-                    animation: trans 3s ease-out 0s;
-                }
             }
         }
     }

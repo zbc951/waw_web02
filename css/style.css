@@ -3719,19 +3719,19 @@ particle {
   35% {
     left: 41%;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     opacity: 1;
   }
   65% {
     left: 59%;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     opacity: 1;
   }
   100% {
     left: 100%;
     -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+            transform: rotate(-180deg);
     opacity: 0;
   }
 }
@@ -3743,19 +3743,19 @@ particle {
   35% {
     left: 41%;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     opacity: 1;
   }
   65% {
     left: 59%;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     opacity: 1;
   }
   100% {
     left: 100%;
     -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+            transform: rotate(-180deg);
     opacity: 0;
   }
 }

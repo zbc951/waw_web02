@@ -633,10 +633,10 @@ $(function(){
 
 $(function(){
     $('.mainAnime button').click(function(){
-        $('.transBoard').css('opacity','1');
+        $('.transBoard').addClass('display');
 
         setTimeout(function(){
-            $('.mainAnime').fadeOut(2000);
+            $('.mainAnime').fadeOut(500);
         },1000);
     })
 })

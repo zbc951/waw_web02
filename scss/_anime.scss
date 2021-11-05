@@ -1261,3 +1261,21 @@
         opacity: 0;
     }
 }
+
+//轉場消失動畫
+@keyframes trans {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+
+    30% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(20);
+    }
+}

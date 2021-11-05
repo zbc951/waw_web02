@@ -985,14 +985,14 @@ html {
             #c {
                 position: absolute;
                 z-index: 1;
-                animation: starJump 5s ease-out 0s;
+                animation: stop 3s linear 0s,starJump 5s ease-out 3s;
             }
 
             #canvas {
                 position: absolute;
                 z-index: 2;
                 pointer-events: none;
-                animation: stop 1.5s linear 0s,ballJump 1s ease-out 1.5s;
+                animation: stop 4.5s linear 0s,ballJump 1s ease-out 4.5s;
                 transition: 0.3s all;
             }
 
@@ -1003,7 +1003,7 @@ html {
                 border-radius: 50%;
                 // border: solid 5px #ffffff;
                 // box-shadow: 3px 3px 50px 0px #ffffff;
-                animation: around2 4s ease-in 2.5s infinite;
+                animation: around2 4s ease-in 5.5s infinite;
                 transform: rotateX(55deg) rotateY(-25deg) rotate(-90deg);
                 position: absolute;
                 z-index: 3;
@@ -1049,6 +1049,7 @@ html {
                 color: #ffffff;
                 font-size: 24px;
                 font-weight: bold;
+                animation: stop 3s linear 0s,btnJump 0.3s ease-out 3s;
 
                 &:active {
                     transform: scale(0.9);
@@ -1067,7 +1068,7 @@ html {
                         height: 4px;
                         top: -4px;
                         left: -4px;
-                        animation: stop 0.5s linear 0s,line1 0.3s linear 0.5s;
+                        animation: stop 3.5s linear 0s,line1 0.2s linear 3.5s;
                     }
 
                     &:nth-of-type(2) {
@@ -1075,7 +1076,7 @@ html {
                         height: calc(100% + 8px);
                         top: -4px;
                         right: -4px;
-                        animation: stop 0.8s linear 0s,line2 0.3s linear 0.8s;
+                        animation: stop 3.7s linear 0s,line2 0.2s linear 3.7s;
                     }
                     
                     &:nth-of-type(3) {
@@ -1083,7 +1084,7 @@ html {
                         height: 4px;
                         bottom: -4px;
                         right: -4px;
-                        animation: stop 1.1s linear 0s,line1 0.3s linear 1.1s;
+                        animation: stop 3.9s linear 0s,line1 0.2s linear 3.9s;
                     }
 
                     &:nth-of-type(4) {
@@ -1091,9 +1092,50 @@ html {
                         height: calc(100% + 8px);
                         bottom: -4px;
                         left: -4px;
-                        animation: stop 1.4s linear 0s,line2 0.3s linear 1.4s;
+                        animation: stop 4.1s linear 0s,line2 0.2s linear 4.1s;
                     }
                 }
+            }
+            
+            .loading {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                top: 0px;
+                background: #0a102e;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    position: absolute;
+                    font-size: 30px;
+                    opacity: 0;
+                    animation: move 2s linear infinite;
+                    transform: rotate(180deg);
+                    color: #35C4F0;
+
+                    &:nth-child(2) {
+                        animation-delay:0.2s;
+                    }
+                    &:nth-child(3) {
+                        animation-delay:0.4s;
+                    }
+                    &:nth-child(4) {
+                        animation-delay:0.6s;
+                    }
+                    &:nth-child(5) {
+                        animation-delay:0.8s;
+                    }
+                    &:nth-child(6) {
+                        animation-delay:1s;
+                    }
+                    &:nth-child(7) {
+                        animation-delay:1.2s;
+                    }
+                  }
             }
         }
     }
@@ -1171,13 +1213,6 @@ particle {
     html {
         
         body {
-
-            .mainAnime {
-                
-                .svgWrapper {
-                    width: 1100px;
-                }
-            }
 
             main {
 

@@ -1013,15 +1013,15 @@ html body .mainAnime {
 html body .mainAnime #c {
   position: absolute;
   z-index: 1;
-  -webkit-animation: starJump 5s ease-out 0s;
-          animation: starJump 5s ease-out 0s;
+  -webkit-animation: stop 3s linear 0s, starJump 5s ease-out 3s;
+          animation: stop 3s linear 0s, starJump 5s ease-out 3s;
 }
 html body .mainAnime #canvas {
   position: absolute;
   z-index: 2;
   pointer-events: none;
-  -webkit-animation: stop 1.5s linear 0s, ballJump 1s ease-out 1.5s;
-          animation: stop 1.5s linear 0s, ballJump 1s ease-out 1.5s;
+  -webkit-animation: stop 4.5s linear 0s, ballJump 1s ease-out 4.5s;
+          animation: stop 4.5s linear 0s, ballJump 1s ease-out 4.5s;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
@@ -1031,8 +1031,8 @@ html body .mainAnime .flyDebris {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   border-radius: 50%;
-  -webkit-animation: around2 4s ease-in 2.5s infinite;
-          animation: around2 4s ease-in 2.5s infinite;
+  -webkit-animation: around2 4s ease-in 5.5s infinite;
+          animation: around2 4s ease-in 5.5s infinite;
   -webkit-transform: rotateX(55deg) rotateY(-25deg) rotate(-90deg);
           transform: rotateX(55deg) rotateY(-25deg) rotate(-90deg);
   position: absolute;
@@ -1081,6 +1081,8 @@ html body .mainAnime button {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
+  -webkit-animation: stop 3s linear 0s, btnJump 0.3s ease-out 3s;
+          animation: stop 3s linear 0s, btnJump 0.3s ease-out 3s;
 }
 html body .mainAnime button:active {
   -webkit-transform: scale(0.9);
@@ -1098,32 +1100,84 @@ html body .mainAnime button p:nth-of-type(1) {
   height: 4px;
   top: -4px;
   left: -4px;
-  -webkit-animation: stop 0.5s linear 0s, line1 0.3s linear 0.5s;
-          animation: stop 0.5s linear 0s, line1 0.3s linear 0.5s;
+  -webkit-animation: stop 3.5s linear 0s, line1 0.2s linear 3.5s;
+          animation: stop 3.5s linear 0s, line1 0.2s linear 3.5s;
 }
 html body .mainAnime button p:nth-of-type(2) {
   width: 4px;
   height: calc(100% + 8px);
   top: -4px;
   right: -4px;
-  -webkit-animation: stop 0.8s linear 0s, line2 0.3s linear 0.8s;
-          animation: stop 0.8s linear 0s, line2 0.3s linear 0.8s;
+  -webkit-animation: stop 3.7s linear 0s, line2 0.2s linear 3.7s;
+          animation: stop 3.7s linear 0s, line2 0.2s linear 3.7s;
 }
 html body .mainAnime button p:nth-of-type(3) {
   width: calc(100% + 8px);
   height: 4px;
   bottom: -4px;
   right: -4px;
-  -webkit-animation: stop 1.1s linear 0s, line1 0.3s linear 1.1s;
-          animation: stop 1.1s linear 0s, line1 0.3s linear 1.1s;
+  -webkit-animation: stop 3.9s linear 0s, line1 0.2s linear 3.9s;
+          animation: stop 3.9s linear 0s, line1 0.2s linear 3.9s;
 }
 html body .mainAnime button p:nth-of-type(4) {
   width: 4px;
   height: calc(100% + 8px);
   bottom: -4px;
   left: -4px;
-  -webkit-animation: stop 1.4s linear 0s, line2 0.3s linear 1.4s;
-          animation: stop 1.4s linear 0s, line2 0.3s linear 1.4s;
+  -webkit-animation: stop 4.1s linear 0s, line2 0.2s linear 4.1s;
+          animation: stop 4.1s linear 0s, line2 0.2s linear 4.1s;
+}
+html body .mainAnime .loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #0a102e;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainAnime .loading div {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  -webkit-animation: move 2s linear infinite;
+          animation: move 2s linear infinite;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #35C4F0;
+}
+html body .mainAnime .loading div:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+html body .mainAnime .loading div:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+html body .mainAnime .loading div:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+html body .mainAnime .loading div:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+html body .mainAnime .loading div:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+html body .mainAnime .loading div:nth-child(7) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 particle {
@@ -1162,9 +1216,6 @@ particle {
   }
 }
 @media screen and (max-width: 1400px) {
-  html body .mainAnime .svgWrapper {
-    width: 1100px;
-  }
   html body main .mainBox.web .forWeb li {
     width: 28%;
     padding-bottom: 18%;
@@ -3642,5 +3693,69 @@ particle {
   }
   100% {
     height: 100%;
+  }
+}
+@-webkit-keyframes btnJump {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes btnJump {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  35% {
+    left: 41%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  65% {
+    left: 59%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+@keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  35% {
+    left: 41%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  65% {
+    left: 59%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    opacity: 0;
   }
 }

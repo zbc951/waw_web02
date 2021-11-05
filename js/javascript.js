@@ -159,7 +159,7 @@ function isMobile() {
 }
 $(function(){
     if(isMobile()){
-        $('.svgWrapper').css('width','900')
+        $('header,main').css('min-width','0px');
     }
 })
 
@@ -193,7 +193,7 @@ $(function(){
 
         setTimeout(function(){
             $(tb).fadeOut('1000');
-        },5800);
+        },8800);
     }
 })
 
@@ -202,7 +202,7 @@ $(function(){
     var tmax_optionsGlobal = {
         repeat: 0,
         repeatDelay: 0.65,
-        delay: 5
+        delay: 8
     };
       
     CSSPlugin.useSVGTransformAttr = true;
@@ -634,7 +634,7 @@ $(function(){
 $(function(){
     $('.mainAnime button').click(function(){
         $(this).removeClass('display');
-        
+
         $("#canvas").css({
             opacity : 0,
             transform : 'scale(0)',
@@ -642,4 +642,10 @@ $(function(){
 
         $('.mainAnime').fadeOut(500);
     })
+})
+
+$(function(){
+    setTimeout(function(){
+        $('.loading').fadeOut(500);
+    },2500);
 })

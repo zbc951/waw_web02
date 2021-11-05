@@ -1044,18 +1044,17 @@ html {
             }
 
             .transBoard {
-                opacity: 0;
                 position: absolute;
                 margin-top: 15%;
                 border-radius: 50%;
                 width: 150px;
                 height: 150px;
-                background: #ffffff;
                 z-index: 100;
                 pointer-events: none;
+                transform: scale(20);
 
                 &.display {
-                    animation: trans 1.5s ease-out 0s;
+                    animation: trans 3s ease-out 0s;
                 }
             }
         }

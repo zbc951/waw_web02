@@ -636,7 +636,7 @@ $(function(){
         $('.transBoard').css('opacity','1');
 
         setTimeout(function(){
-            $('.mainAnime').fadeOut('2000');
+            $('.mainAnime').fadeOut(2000);
         },1000);
     })
 })

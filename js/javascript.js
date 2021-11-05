@@ -630,3 +630,13 @@ $(function(){
     document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
   }
 })
+
+$(function(){
+    $('.mainAnime button').click(function(){
+        $('.transBoard').css('opacity','1');
+
+        setTimeout(function(){
+            $('.mainAnime').fadeOut('2000');
+        },1000);
+    })
+})

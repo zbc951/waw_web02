@@ -1069,8 +1069,21 @@ html body .mainAnime figure svg > * {
 html body .mainAnime button {
   position: absolute;
   z-index: 5;
-  top: 60%;
+  margin-top: 15%;
   padding: 20px;
+}
+html body .mainAnime .transBoard {
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: #ffffff;
+  pointer-events: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 particle {

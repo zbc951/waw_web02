@@ -633,6 +633,8 @@ $(function(){
 
 $(function(){
     $('.mainAnime button').click(function(){
+        $(this).removeClass('display');
+        
         $("#canvas").css({
             opacity : 0,
             transform : 'scale(0)',

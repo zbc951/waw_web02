@@ -650,6 +650,12 @@ $(function(){
     },2500);
 })
 
+// $(function(){
+//   if(document.readyState === 'complete'){
+//     $('.loading').fadeOut(500);
+//   }
+// })
+
 //--我是分隔線--//
 
 $(function(){

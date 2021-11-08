@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: #45b34c;
+    background: #0a102e;
 
     body {
         width: 100%;
@@ -54,67 +54,58 @@ html {
                     z-index: 2;
 
                     &:hover,&:active,&.active {
-
+                        
                         input {
                             width: 300px;
-                            padding-left: 60px;
+                            padding: 0px 60px 0px 20px;
                             background: #ffffff;
+                            color: #202342;
+
+                            &::placeholder {
+                                color: #202342;
+                            }
                         }
 
                         span {
-                            width: 50px;
-
-                            i {
-                                color: #146523;
-                            }
+                            background: #1f69f0;
+                            left: 84%
                         }
                     }
 
                     input {
-                        width: 0px;
+                        width: 105px;
                         height: 40px;
-                        background: transparent;
+                        background: #2d325a;
                         border-radius: 50px;
                         border: none;
-                        padding-left: 0px;
+                        padding-left: 60px;
                         font-size: 15px;
                         transition: 0.4s all;
-                        color: #33853b;
-
-                        &:hover,&:active,&.active {
-                            border: solid 1px #fcda4f;
-                            background: linear-gradient(to top,#f9ad1b 0%,#f2cd37 100%);
-                            box-shadow: 0px 5px 10px 0px #0000004d inset;
-                            transition: 0.2s all;
-                            color: #ffffff;
-
-                            &::placeholder {
-                                color: #ffffff;
-                            }
-                        }
+                        color: #ffffff;
+                        box-shadow: 0px 0px 8px 0px #00000045;
 
                         &::placeholder {
-                            color: #33853b;
+                            color: #ffffff;
                         }
                     }
 
                     span {
                         position: absolute;
                         display: block;
-                        width: 40px;
+                        width: 50px;
                         height: 100%;
-                        background: #f2cd37;
-                        box-shadow: 0px 0px 8px 0px #0000004d;
+                        background: #374183;
+                        box-shadow: 0px 0px 8px 0px #00000045;
                         border-radius: 50px;
+                        transition: 0.6s all;
                         text-align: center;
-                        cursor: pointer;
-                        transition: 0.2s all;
+                        left: 0px;
+                        cursor: pointer; 
 
                         i {
                             line-height: 40px;
                             font-size: 24px;
                             color: #ffffff;
-                            transition: 0.2s all;
                         }
                     }
                 }
@@ -132,67 +123,13 @@ html {
                         margin-right: 0px;
                     }
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 3px;
-                        left: 7px;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        background: #f2cd37;
-                        opacity: 0;
-                        pointer-events: none;
-                    }
-            
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        bottom: 8px;
-                        right: 2px;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        background: #f2cd37;
-                        opacity: 0;
-                        pointer-events: none;
-                    }
-                    
-                    &:hover,&:active {
-
-                        &::before {
-                            animation: dotJump1 0.3s linear 0.2s;
-                        }
-
-                        &::after {
-                            animation: dotJump2 0.4s linear 0s;
-                        }
+                    &:hover,&:active,&.active {
                         
                         button {
-                            background: #f2cd37;
-                            animation: rightSide_hover 0.4s linear 0s;
-
-                            i {
-                                color: #146523;
-                            }
-
-                            span {
-                                color: #084a14;
-                            }
-                        }
-                    }
-
-                    &.active {
-                        
-                        button {
-                            background: #f2cd37;
-
-                            i {
-                                color: #146523;
-                            }
-
-                            span {
-                                color: #084a14;
+                            
+                            &::before {
+                                opacity: 1;
+                                width: 100%;
                             }
                         }
                     }
@@ -202,8 +139,24 @@ html {
                         height: 40px;
                         transition: 0.3s all;
                         border-radius: 30px;
-                        background: transparent;
+                        background: #313a75;
                         padding: 0px 15px;
+                        z-index: 1;
+                        position: relative;
+                        overflow: hidden;
+
+                        &::before {
+                            opacity: 0;
+                            content: "";
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 0%;
+                            height: 100%;
+                            background: linear-gradient(to right,#ed47f3 16%,#8a5efa 60%,#15bde7 96%);
+                            transition: 0.5s all;
+                            z-index: -1;
+                        }
     
                         i {
                             font-size: 28px;
@@ -240,185 +193,8 @@ html {
                         background-size: 100%;
                         top: 50%;
                         transform: translateY(-50%);
-
-                        &:nth-of-type(1) {
-                            animation: fadeOut 15s linear 0s infinite;
-                        }
-
-                        &:nth-of-type(2) {
-                            background-position-y: 100%;
-                            animation: fadeIn 15s linear 0s infinite;
-                        }
                     }
                 }
-
-                //泡泡主體
-                .dropContainer {
-                    width: 600px;
-                    height: 600px;
-                    background: radial-gradient(#51b558,#63bb64);
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    top: -510px;
-                    border-radius: 50% 50% 50% 50%;
-                    z-index: 2;
-                    animation: skakeBub 15s linear 0s infinite,backgroundTrans 15s linear 0s infinite;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: 0px;
-                        left: 0px;
-                        width: 100%;
-                        height: 100%;
-                        background: radial-gradient(transparent, #ffffff);
-                        border-radius: 100%;
-                        opacity: 0;
-                        animation: bubBreak 15s linear 0s infinite;
-                    }
-                }
-                .fakeDrop {
-                    width: 600px;
-                    height: 600px;
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    top: -510px;
-                    border-radius: 100%;
-
-                    .drop {
-                        position: absolute;
-                        background: #ffffff;
-                        border-radius: 100%;
-                        opacity: 0;
-
-                        &::before,&::after {
-                            content: "";
-                            position: absolute;
-                            border-radius: 100%;
-                            background: #ffffff;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            bottom: 0px;
-                        }
-                        
-                        &:nth-child(1) {
-                            width: 20px;
-                            height: 20px;
-                            left: 160px;
-                            bottom: 25px;
-                            transform: rotate(45deg);
-                            animation: smallBub1 15s linear 0s infinite;
-
-                            &::before {
-                                width: 10px;
-                                height: 10px;
-                                animation: smallBub1_2 15s linear 0s infinite;
-                            }
-
-                            &::after {
-                                width: 6px;
-                                height: 6px;
-                                animation: smallBub1_3 15s linear 0s infinite;
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            width: 15px;
-                            height: 15px;
-                            right: 170px;
-                            bottom: 30px;
-                            transform: rotate(120deg);
-                            animation: smallBub2 15s linear 0s infinite;
-
-                            &::before {
-                                width: 8px;
-                                height: 8px;
-                                animation: smallBub2_2 15s linear 0s infinite;
-                            }
-
-                            &::after {
-                                width: 4px;
-                                height: 4px;
-                                animation: smallBub2_3 15s linear 0s infinite;
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            width: 20px;
-                            height: 20px;
-                            left: 140px;
-                            bottom: 40px;
-                            transform: rotate(90deg);
-                            animation: smallBub3 15s linear 0s infinite;
-
-                            &::before {
-                                width: 6px;
-                                height: 6px;
-                                animation: smallBub3_2 15s linear 0s infinite;
-                            }
-                        }
-
-                        &:nth-child(4) {
-                            width: 10px;
-                            height: 10px;
-                            right: 230px;
-                            bottom: 10px;
-                            transform: rotate(140deg);
-                            animation: smallBub4 15s linear 0s infinite;
-                        }
-
-                        &:nth-child(5) {
-                            width: 20px;
-                            height: 20px;
-                            right: 140px;
-                            bottom: 40px;
-                            transform: rotate(110deg);
-                            animation: smallBub5 15s linear 0s infinite;
-
-                            &::before {
-                                width: 6px;
-                                height: 6px;
-                                animation: smallBub5_2 15s linear 0s infinite;
-                            }
-                        }
-
-                        &:nth-child(6)  {
-                            width: 30px;
-                            height: 30px;
-                            left: 140px;
-                            bottom: 40px;
-                            transform: rotate(70deg);
-                            animation: smallBub6 15s linear 0s infinite;
-
-                            &::before {
-                                width: 8px;
-                                height: 8px;
-                                animation: smallBub6_2 15s linear 0s infinite;
-                            }
-
-                            &::after {
-                                width: 5px;
-                                height: 5px;
-                                animation: smallBub6_3 15s linear 0s infinite;
-                            }
-                        }
-                    }
-                }
-            }
-
-            //左上小泡泡
-            .small_Bub1 {
-                width: 120px;
-                height: 120px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: -35px;
-                top: -30px;
-                opacity: 0.4;
-                animation: small_shakeBub1 12s linear 0s infinite;
             }
         }
 
@@ -721,235 +497,9 @@ html {
             height: 100%;
             top: 0px;
             left: 0px;
-            background: url('../images/bg.jpg') no-repeat top center;
+            background: linear-gradient(135deg,#020409 25%,#212750 100%);
             background-size: cover;
             z-index: -999;
-
-            //右側小泡泡+大泡泡
-            .small_Bub2 {
-                width: 120px;
-                height: 120px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: -80px;
-                top: 270px;
-                opacity: 0.4;
-                animation: small_shakeBub1 10s linear 0s infinite;
-            }
-            .small_Bub3 {
-                width: 600px;
-                height: 600px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: -300px;
-                bottom: -400px;
-                opacity: 0.4;
-                animation: small_shakeBub2 10s linear 0s infinite;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 100%;
-                    background: radial-gradient(transparent,#ffffff);
-                    top: 120px;
-                    left: 60px;
-                    opacity: 0;
-                    animation: small_shakeBub2_2 10s linear 0s infinite;
-                }   
-            }
-
-            //左側小泡泡+大泡泡
-            .small_Bub4 {
-                width: 150px;
-                height: 150px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: -70px;
-                bottom: 300px;
-                opacity: 0.4;
-                animation: small_shakeBub3 12s linear 0s infinite;
-            }
-            .small_Bub5 {
-                width: 360px;
-                height: 360px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: -80px;
-                bottom: -140px;
-                opacity: 0.4;
-                animation: small_shakeBub4 10s linear 0s infinite;
-            }
-
-            //雜泡
-            .small_Bub9 {
-                width: 30px;
-                height: 30px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: 590px;
-                bottom: 110px;
-                opacity: 0.2;
-                animation: background_floatBub1 10s linear 0s infinite;
-            }
-            .small_Bub10 {
-                width: 40px;
-                height: 40px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: 600px;
-                bottom: 0px;
-                opacity: 0.2;
-                animation: background_floatBub2 7s linear 0s infinite;
-            }
-            .small_Bub11 {
-                width: 20px;
-                height: 20px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: 300px;
-                bottom: 30px;
-                opacity: 0.2;
-                animation: background_floatBub3 8s linear 0s infinite;
-            }
-            .small_Bub12 {
-                width: 15px;
-                height: 15px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                left: 700px;
-                bottom: 0px;
-                opacity: 0.2;
-                animation: background_floatBub4 8s linear 0s infinite;
-            }
-            .small_Bub13 {
-                width: 25px;
-                height: 25px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: 300px;
-                bottom: 0px;
-                opacity: 0.2;
-                animation: background_floatBub4 12s linear 0s infinite;
-            }
-            .small_Bub14 {
-                width: 30px;
-                height: 30px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: 500px;
-                bottom: 0px;
-                opacity: 0.2;
-                animation: background_floatBub4 10s linear 0s infinite;
-            }
-            .small_Bub15 {
-                width: 40px;
-                height: 40px;
-                background: radial-gradient(transparent,#ffffff);
-                border-radius: 100%;
-                position: absolute;
-                right: 900px;
-                bottom: 0px;
-                opacity: 0.2;
-                animation: background_floatBub4 15s linear 0s infinite;
-            }
-        }
-
-        //漂浮泡泡
-        .bubContainer {
-            width: 100%;
-            min-width: 1100px;
-            height: 120px;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
-
-            .small_Bub6 {
-                width: 100px;
-                height: 100px;
-                background: radial-gradient(transparent, #ffffff);
-                border-radius: 100%;
-                position: absolute;
-                bottom: -730px;
-                left: 455px;
-                opacity: 0.4;
-                animation: floatBub1 15s linear 0s infinite;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0px;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 100%;
-                    background: radial-gradient(transparent,#ffffff);
-                    opacity: 0;
-                    animation: floatBub1_2 15s linear 0s infinite;
-                }
-            }
-
-            .small_Bub7 {
-                width: 110px;
-                height: 110px;
-                background: radial-gradient(transparent, #ffffff);
-                border-radius: 100%;
-                position: absolute;
-                bottom: -945px;
-                right: 460px;
-                opacity: 0.4;
-                animation: floatBub2 15s linear 0s infinite;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0px;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 100%;
-                    background: radial-gradient(transparent,#ffffff);
-                    opacity: 0;
-                    animation: floatBub2_2 15s linear 0s infinite;
-                }
-            }
-
-            .small_Bub8 {
-                width: 240px;
-                height: 240px;
-                background: radial-gradient(transparent, #ffffff);
-                border-radius: 100%;
-                position: absolute;
-                bottom: -700px;
-                right: 180px;
-                opacity: 0.4;
-                animation: floatBub3 15s linear 0s infinite;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0px;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 100%;
-                    background: radial-gradient(transparent,#ffffff);
-                    opacity: 0;
-                    animation: floatBub3_2 15s linear 0s infinite;
-                }
-            }
         }
 
         //隱藏列

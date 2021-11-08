@@ -168,13 +168,19 @@
                 <span>
                     <i class="fas fa-search"></i>
                 </span>
-                <input type="text" placeholder="搜尋...">
+                <input type="text" placeholder="搜尋">
             </div>
             <!--切換按鈕-->
             <div class="btnBox mobileBtn">
                 <button>
                     <i class="fas fa-mobile-alt"></i>
-                    <span>手機版</span>
+                    <span>手機版B</span>
+                </button>
+            </div>
+            <div class="btnBox mobileBtn">
+                <button>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>手機版A</span>
                 </button>
             </div>
             <div class="btnBox webBtn active">
@@ -186,21 +192,8 @@
             <!--logo-->
             <div class="logo" onclick="window.location.href='./index.html'">
                 <div></div>
-                <div></div>
-            </div>
-            <!--泡泡主體-->
-            <div class="dropContainer"></div>
-            <div class="fakeDrop">
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
-                <div class="drop"></div>
             </div>
         </article>
-        <!--左上小泡泡-->
-        <div class="small_Bub1"></div>
     </header>
     <!--main-->
     <main>
@@ -353,26 +346,7 @@
     </main>
     <!--bg-->
     <div class="bg">
-        <!--右側泡泡-->
-        <div class="small_Bub2"></div>
-        <div class="small_Bub3"></div>
-        <!--左側泡泡-->
-        <div class="small_Bub4"></div>
-        <div class="small_Bub5"></div>
-        <!--雜泡-->
-        <div class="small_Bub9"></div>
-        <div class="small_Bub10"></div>
-        <div class="small_Bub11"></div>
-        <div class="small_Bub12"></div>
-        <div class="small_Bub13"></div>
-        <div class="small_Bub14"></div>
-        <div class="small_Bub15"></div>
-    </div>
-    <!--漂浮泡泡-->
-    <div class="bubContainer">
-        <div class="small_Bub6"></div>
-        <div class="small_Bub7"></div>
-        <div class="small_Bub8"></div>
+        <canvas id="universe"></canvas>
     </div>
     <!--隱藏列-->
     <div class="hideBar"></div>
